@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자 주문하기</title>
+</head>
+<html>
+    <h2>피자 주문하기</h2>
+    <hr>
+    <form action=""></form>
+    고객 명:<input type="text" size="15"><br>
+    전화번호:<input type="col" size="15"><br>
+    E-mail:<input type="mail"><br>
+    피자종류:<input type="text" list="피자종류"><br>
+    <datalist id="피자종류">
+        <option value="불고기피자"></option>
+        <option value="파인애플피자"></option>
+        <option value="치즈피자"></option>
+    </datalist>
+    <fieldset style="width: 300px;">
+    <legend>피자 사이즈</legend>
+    <input type="radio" name="size" value="Small">Small<br>
+    <input type="radio" name="size" value="Medium">Medium<br>
+    <input type="radio" name="size" value="Large">Large
+    </fieldset>
+    <fieldset style="width: 300px;">
+        <legend>토핑선택</legend>
+        <input type="checkbox" name="토핑" value="베이컨">베이컨<br>
+        <input type="checkbox" name="토핑" value="치즈">치즈<br>
+        <input type="checkbox" name="토핑" value="양파">양파<br>
+        <input type="checkbox" name="토핑" value="버섯">버섯
+    </fieldset>
+    희망배송시간:<input type="time" value=""><br>
+    배송시 요청사항:<input type="text"><br>
+    <input type="submit" value="주문하기"><input type="reset" value="다시 선택하기">
+</body>
+</html>
