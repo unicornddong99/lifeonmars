@@ -9,23 +9,24 @@
 <body>
     <h1>회원가입하기</h1>
     <hr>
-    <form action=""></form>
+    <form action="hogi.php" method="get" target="_blank">
     <table border="1">
         <tr><td style="text-align:center" colspan="2">회원가입</td></tr>
         <tr><td>이름</td><td><input name="name" type="text"></td></tr>
         <tr><td>사용자ID</td><td><input name="id" type="text"></td></tr>
-        <tr><td>암호</td><td><input type="password" name="password"></td></tr>
-        <tr><td>암호확인</td><td><input type="text" name="password check"></td></tr>
-        <tr><td>주민등록번호</td><td><input type="password" size="6">-<input type="text" size="6"></td></tr>
-        <tr><td>전화번호</td><td><input name="tel1" type="text" size="3">-<input name="tel2" type="text" size="4">-<input name="tel3" type="text" size="4"></td></tr>
-        <tr><td>성별</td><td>남자<input type="radio" name="sung" value="man"> 여자<input type="radio" name="sung" value="girl"></td></tr>
-        <tr><td>직업</td><td><input type="text" list="job" name="job">
+        <tr><td>암호</td><td><input name="password" type="password"></td></tr>
+        <tr><td>암호확인</td><td><input name="password check" type="password"></td></tr>
+        <tr><td>주민등록번호</td><td><input name="resident registration number" type="password" size="6">-<input type="password" size="6"></td></tr>
+        <tr><td>전화번호</td><td><input name="tel" type="tel" size="3">-<input name="tel2" type="text" size="4">-<input name="tel3" type="text" size="4"></td></tr>
+        <tr><td>성별</td><td>남자<input name="sung" type="radio" value="man"> 여자<input name="sung" type="radio" value="girl"></td></tr>
+        <tr><td>직업</td><td><input name="job" type="text" list="job" >
             <datalist id="job">
                 <option value="간호사"></option>
                 <option value="의사"></option>
             </datalist></td></tr>
-        <tr><td>email주소</td><td><input type="text" value=""></td></tr>
-        <tr><td style="text-align: center" colspan="2"><input type="submit" value="가입신청"><input type="reset" value="취소"></td></tr>
+        <tr><td>email주소</td><td><input type="email" placeholder="id@host"></td></tr>
+        <tr><td style="text-align:center" colspan="2"><input type="submit" value="가입신청"><input type="reset" value="취소"></td></tr>
     </table>
+</form>
 </body>
 </html>

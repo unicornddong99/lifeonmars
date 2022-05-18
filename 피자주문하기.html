@@ -9,10 +9,10 @@
 <html>
     <h2>피자 주문하기</h2>
     <hr>
-    <form action=""></form>
-    고객 명:<input type="text" size="15"><br>
-    전화번호:<input type="col" size="15"><br>
-    E-mail:<input type="mail"><br>
+    <form action="pizza.php" method="get" target="_blank">
+    고객 명:<input type="text"><br>
+    전화번호:<input type="tel"><br>
+    E-mail:<input type="email" placeholder="id@host"><br>
     피자종류:<input type="text" list="피자종류"><br>
     <datalist id="피자종류">
         <option value="불고기피자"></option>
@@ -32,8 +32,9 @@
         <input type="checkbox" name="토핑" value="양파">양파<br>
         <input type="checkbox" name="토핑" value="버섯">버섯
     </fieldset>
-    희망배송시간:<input type="time" value=""><br>
+    희망배송시간:<input type="time"><br>
     배송시 요청사항:<input type="text"><br>
     <input type="submit" value="주문하기"><input type="reset" value="다시 선택하기">
+</form>
 </body>
 </html>
