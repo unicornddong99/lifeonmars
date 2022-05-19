@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터 만들기</title>
+    <style>
+        h3, ul>li {
+            color: #6B8E23;
+        }
+        p>strong {
+            background-color: yellow;
+        }
+        a:active {
+            color: green;
+        }
+        li:hover {
+            background-color: green;
+        }
+        h3:first-letter {
+            color: red;
+        }
+        li:hover {
+            color: yellowgreen;
+        }
+        #list {
+            background-color: mistyrose;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Web Programming</h3>
+    <hr>
+        <p>2학기<strong>학습 내용</strong></p>
+        <ul id="list">
+            <li class="red" id="liyellow">HTML5</li>
+            <li class="red"><strong>CSS</strong></li>
+            <li><a href="https://www.naver.com" target="_blank">JavaScript</a></li>
+        </ul>
+        <p>60점 이하는 F!</p>
+</body>
+</html>
