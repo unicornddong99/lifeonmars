@@ -6,39 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>셀렉터 만들기</title>
     <style>
-        h3, ul>li {
-            color: #6B8E23;
+        h3, li {
+            color:brown;
         }
-        p>strong {
-            background-color: yellow;
+        div>div>strong {
+            background: yellow;
         }
-        a:active {
-            color: green;
+        ul strong {
+            color: dodgerblue;
         }
-        li:hover {
-            background-color: green;
+        .warning {
+            color: red;
         }
-        h3:first-letter {
+        body.main {
+            background: aliceblue;
+        }
+        #list {
+
+            background: mistyrose;
+        }
+        #list span {
+            color: forestgreen;
+        }
+        h3::first-letter {
             color: red;
         }
         li:hover {
-            color: yellowgreen;
+            background: yellowgreen;
         }
-        #list {
-            background-color: mistyrose;
-        }
-        
     </style>
 </head>
-<body>
+<body class="main">
     <h3>Web Programming</h3>
     <hr>
-        <p>2학기<strong>학습 내용</strong></p>
+    <div>
+        <div>2학기<strong>학습 내용</strong>입니다.</div>
         <ul id="list">
-            <li class="red" id="liyellow">HTML5</li>
-            <li class="red"><strong>CSS</strong></li>
-            <li><a href="https://www.naver.com" target="_blank">JavaScript</a></li>
+        <li><span>HTML</span></li>
+        <li><strong>CSS</strong></li>
+        <li><a href="https://www.naver.com/" target="_blank">JAVASCRIPT</a></li>
         </ul>
-        <p>60점 이하는 F!</p>
+        <div class="warning">60점 이하는 F!</div>
+    </div>
 </body>
 </html>
